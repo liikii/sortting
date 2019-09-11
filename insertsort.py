@@ -1,12 +1,12 @@
 """
 insert sorting
 """
-
+from utils import get_random_array
 
 
 def tst(a):
     """
-
+    increasing sort.
     :param a: array.
     :return: none
     """
@@ -23,9 +23,24 @@ def tst(a):
     print(a)
 
 
+def tst3():
+    # from big to small.
+    pass
+
+
 def tst2():
-    a = [13, 889, 1, 2, 9, 7]
+    # a = [13, 889, 1, 2, 9, 7]
+    a = get_random_array()
+    print(a)
     tst(a)
+
+
+def tst4():
+    """
+    Consider the problem of adding two n-bit binary integers, stored in two n-element arrays A and B. The sum of the two integers should be stored in binary form in
+    an .n C 1/-element array C . State the problem formally and write pseudocode for adding the two integers.
+    :return:
+    """
 
 
 tst2()
