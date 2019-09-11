@@ -30,3 +30,8 @@ Combine the solutions to the subproblems into the solution for the original prob
 ```python
 [1, 3, 5] [0, 2, 4]
 ```
+* merge sort 主要是解决什么问题
+* 
+```
+
+```
