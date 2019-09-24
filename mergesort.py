@@ -1,5 +1,19 @@
 """
+
+
 merge sorted.
+
+
+merge()
+
+
+merge_sort(a, p, r):
+    if p < r:
+        q = (p + r)/2
+        merge_sort(a, p, q)
+        merge_sort(a, q+1, r)
+        merge(a, p, q, r)
+
 """
 
 
@@ -26,14 +40,24 @@ def tst(a, b):
     print(c)
 
 
-
-def tst3():
+def merge(a, p, q, r):
     """
-
-    :return:
+    :param a:
+    :param p:
+    :param q:
+    :param r:
     """
-    
     pass
+
+
+def merge_sort(a, p, r):
+    """
+    """
+    if p < r:
+        q = (p + r) // 2
+        print(p, q, r)
+        merge_sort(a, p, q)
+        merge_sort(a, q+1, r)
 
 
 def tst2():
@@ -42,4 +66,5 @@ def tst2():
     tst(a, b)
 
 
-tst2()
+# tst2()
+merge_sort([1, 2, 3, 4], 0, 4)
