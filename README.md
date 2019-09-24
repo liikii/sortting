@@ -35,3 +35,12 @@ Combine the solutions to the subproblems into the solution for the original prob
 ```
 
 ```
+
+
+# Binary heap
+* desc: A binary heap is a heap data structure that takes the form of a binary tree. Binary heaps are a common way of implementing priority queues.
+* desc: Heaps where the parent key is greater than or equal to (≥) the child keys are called max-heaps; those where it is less than or equal to (≤) are called min-heaps. 
+* desc: Efficient (logarithmic time) algorithms are known for the two operations needed to implement a priority queue on a binary heap: inserting an element, and removing the smallest or largest element from a min-heap or max-heap, respectively. Binary heaps are also commonly employed in the heapsort sorting algorithm, which is an in-place algorithm because binary heaps can be implemented as an implicit data structure, storing keys in an array and using their relative positions within that array to represent child-parent relationships.
+* 树, 维护一个半顺序化, 或全顺序化结构. 成本来自己维护成本. 
+
+
