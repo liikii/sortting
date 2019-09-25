@@ -44,3 +44,49 @@ Combine the solutions to the subproblems into the solution for the original prob
 * 树, 维护一个半顺序化, 或全顺序化结构. 成本来自己维护成本. 
 
 
+
+# quick sort
+* desc: Quicksort is a divide and conquer algorithm. 
+* desc: first selection the mean value, split the array to less part and large part.
+* 1. Pick an element, called a pivot, from the array.
+* 2. Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
+* 3. Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
+
+
+
+# sorting in linear time
+* These algorithms share an interesting property: the sorted order they determine is based only on comparisons between the input elements. We call such sorting algorithms comparison sorts.
+
+
+# radix sort:
+```
+Input list (base 10):
+    [170, 45, 75, 90, 2, 802, 2, 66]
+Starting on the right:
+    [{170, 90}, {02, 802, 02}, {45, 75}, {66}]
+Notice that a 0-digit is “generated” in front of the 2 for the missing digit, that 802 again comes before the second 02 as 802 comes before 2 in the previous list.
+Sorting by the next digit:
+    [{02, 802, 02}, {45}, {66}, {170, 75}, {90}]
+And finally
+    [{002, 002, 045, 066, 075, 090}, {170}, {802}]
+```
+
+
+# bucket sort:
+    * 把数放在各自己区间. 
+
+
+# decision-tree model:
+    * 分类树 
+    * 递归分析回归结构
+
+
+# B-tree
+    * 每一层 is 元素, also 区间分区点. 每一层有个order.
+    * desc: In B-trees, internal (non-leaf) nodes can have a variable number of child nodes within some pre-defined range. When data is inserted or removed from a node, its number of child nodes changes. In order to maintain the pre-defined range, internal nodes may be joined or split. Because a range of child nodes is permitted, B-trees do not need re-balancing as frequently as other self-balancing search trees, but may waste some space, since nodes are not entirely full. The lower and upper bounds on the number of child nodes are typically fixed for a particular implementation. For example, in a 2-3 B-tree (often simply referred to as a 2-3 tree), each internal node may have only 2 or 3 child nodes.
+
+
+# Fusion tree:
+    * desc:a fusion tree is a type of tree data structure that implements an associative array on w-bit integers. When operating on a collection of n key–value pairs, it uses O(n) space and performs searches in O(logw n) time, which is asymptotically faster than a traditional self-balancing binary search tree, and also better than the van Emde Boas tree for large values of w. It achieves this speed by exploiting certain constant-time operations that can be done on a machine word. Fusion trees were invented in 1990 by Michael Fredman and Dan Willard
+
+
